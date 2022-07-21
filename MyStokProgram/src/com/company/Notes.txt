@@ -1,0 +1,53 @@
+
+bu bilgisayar(sağ click)- özellikler -  gelişmiş ayarlar - ortam değişkenleri -
+    sistem değişkenleri - path seçilecek - düzenle- yeni-
+
+cd C:\Program Files\PostgreSQL\14\bin
+
+jdbc:postgresql://host:port/database = jdbc:postgresql://localhost:5432/postgres
+
+CREATE TABLE stocks (
+	code VARCHAR ( 50 ) UNIQUE NOT NULL,
+	category VARCHAR ( 50 ) NOT NULL,
+	description VARCHAR ( 250 ) NOT NULL,
+	price decimal NOT NULL,
+        amount int
+);
+
+CREATE TABLE forusers (
+	id int NOT NULL,
+	name VARCHAR ( 50 ) NOT NULL,
+	age int NOT NULL
+);
+
+insert into forusers values(1,'zeynep',20);
+insert into forusers values(2,'duha',24);
+insert into forusers values(3,'umut',26);
+
+
+
+insert into stocks values('ghi123','etek','kalem etek',356.78,875);
+
+
+
+kullanıcı
+psql -U postgres
+şifre: zeynep123
+
+\c -> database
+\dt -> tables
+\l -> list databases
+
+
+create table basket(
+    takim varchar (50) not null,
+    star varchar (50) not null,
+    number int not null
+);
+
+insert into basket values('detrioit','jackos',14);
+insert into basket values('kobe','nba',14);
+insert into basket values('umut','lakers',14);
+insert into basket values('zeynep','chiago',14);
+
+
